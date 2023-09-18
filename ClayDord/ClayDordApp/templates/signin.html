@@ -1,0 +1,30 @@
+{%load static%}
+<!DOCTYPE html>
+	<head>
+		<title>ClayDord</title>
+		<link rel="stylesheet" type="text/css" href="{%static 'registration.css'%}">
+	</head>
+	<body>
+		<div class="container">
+  		<div class="card">
+    <h2>Login</h2>
+    <form method="POST" action="">
+    	{%csrf_token%}
+      <label for="username" name="username">Username</label>
+      <input type="text" name="username">
+
+      <label for="password" name="password">Password</label>
+      <input type="password" name="password">
+      {% for message in messages %}
+        <p>{{message}}</p>
+      {% endfor %}
+
+      <button type="submit">Login</button>
+    </form>
+    <div class="switch">Don't have an account? <a href="{%url 'signup'%}" onclick="switchCard()">Register here</a></div>
+  </div>
+  </div>
+	</body>
+</html>
+
+  

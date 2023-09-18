@@ -1,0 +1,312 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ClayDord Computers</title>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+        <link rel="stylesheet" href="{%static 'styles.css'%}">
+    </head>
+    <body>
+        <section id="header">
+                <ul id="logo">
+                  <li><h1>C</h1></li>
+                  <li><h1>L</h1></li> 
+                  <li><h1>A</h1></li> 
+                  <li><h1>Y</h1></li> 
+                  <li><h1>D</h1></li> 
+                  <li><h1>O</h1></li> 
+                  <li><h1>R</h1></li> 
+                  <li><h1>D</h1></li>
+              </ul>
+            <div>
+                <ul id="navbar">
+                    <li><a class="active" href="homepage.html">Home</a></li>
+                    <li><a href="{% url 'shop'%}">Shop</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li id="lg-bag"><a href="{%url 'cart'%"><i class="far fa-shopping-bag"></i></a></li>
+                    <a href="#" id="close"><i class="far fa-times"></i></a>
+                </ul>
+            </div>
+            <div id="mobile">
+                <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+                <i id="bar" class="fas fa-outdent"></i>
+            </div>
+        </section>
+
+        <section id="hero">
+            <h4> Trade-in-offer</h4>
+            <h2> Super value deals</h2>
+            <h1>On all our prodycts</h1>
+            <p>Buy on credit with just 30% initial deposit</p>
+            <button>Shop Now</button>
+        </section>
+
+        <section id="feature" class="section-p1" >
+            <div class="feature-box">
+                <img src="alien1.avif"  width="200px" height="200px" alt="">
+                <h6>Shop</h6>
+            </div>
+            <div class="feature-box">
+                <img src="about.jfif"  width="200px" height="200px" alt="">
+                <h6>About Us</h6>
+            </div>
+            <div class="feature-box">
+                <img src="contact1.jfif"  width="200px" height="200px" alt="">
+                <h6>Get in touch</h6>
+            </div>
+            <div class="feature-box">
+                <img src="cus1.avif"  width="200px" height="200px" alt="">
+                <h6>Customize</h6>
+        </section>
+        
+        <section id="product1" class="section-p1" >
+            <h2>Products</h2>
+            <p style="color: black;">Laptops</p>
+            <div class="pro-container">
+                <div class="pro">
+                    <img src="elite1.png" alt="">
+                    <div class="description">
+                        <span>Hp Dragonfly</span>
+                        <h5>Windows 11 Pro among others<br/>
+                            12th Generation<br/>
+                            Intel core i5 and i7 Processors<br/>
+                            13.5" diagonal touch display. Up to 1000 nits.</h5>
+                        <h4>$1095</h4>
+                    </div>
+                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                </div>
+            
+            
+                <div class="pro">
+                    <img src="elite2.png" alt="">
+                    <div class="description">
+                        <span>Hp Dragonfly Folio</span>
+                        <h5>Windows 11 Pro among others<br/>
+                            12th Generation<br/>
+                            Intel core i5 and i7 Processors<br/>
+                            13.5" diagonal touch display. Up to 1000 nits.</h5>
+                        <h4>$976</h4>
+                    </div>
+                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                </div>
+            
+           
+                <div class="pro">
+                    <img src="elite5.png" alt="">
+                    <div class="description">
+                        <span>Hp EliteBook x360 830</span>
+                        <h5>Windows 11 Pro among others<br/>
+                            12th Generation<br/>
+                            Intel core i5 and i7 Processors<br/>
+                            13.3" diagonal diagonal WUXGA (1920 x 1200) touch
+                            250 to 1000 nits</h5>
+                        <h4>$1409</h4>
+                    </div>
+                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                </div>
+            
+            
+                <div class="pro">
+                    <img src="alien1.avif" alt="">
+                    <div class="description">
+                        <span>Dell Alienware</span>
+                        <h5>16-inch high-performance gaming laptop<br/>
+                            Alienware Cryo-tech™ cooling<br/>
+                            Featuring the latest processors<br/>
+                            NVIDIA® GeForce RTX™ 40 Series graphics</h5>
+                        <h4>$2105</h4>
+                    </div>
+                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                </div>
+            
+            
+                <div class="pro">
+                    <img src="elite3.png" alt="">
+                    <div class="description">
+                        <span>Hp EliteBook 840</span>
+                        <h5>Windows 11 Pro among others<br/>
+                            13th Generation<br/>
+                            Intel core i5 and i7 Processors<br/>
+                            Optional vPro® support14" diagonal WUXGA (1920x1200)<br/>
+                            250 to 1000 nitsQuiet and comfortable keyboard<br/>
+                        </h5>
+                        <h4>$1095</h4>
+                    </div>
+                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="pro">
+                    <img src="lap1.png" alt="">
+                    <div class="description">
+                        <span>Hp Pavillion Aero</span>
+                        <h5>Windows 11 Home<br/>
+                            AMD Ryzen 5000 processors<br/>
+                            13.3-inch FHD display with taller 16:10 aspect ratio<br/>
+                            Ultra lightweight design<br/>
+                        </h5>
+                        <h4>$1705</h4>
+                    </div>
+                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="pro">
+                    <img src="lap2.png" alt="">
+                    <div class="description">
+                        <span>Hp Pavillion x360</span>
+                        <h5>Windows 11 Home<br/>
+                            Intel® Celeron™ and i3 Processors available<br/>
+                            500GB and 1TB Hard Drive options<br/>
+                            Optional vPro® support14" diagonal WUXGA (1920x1200)<br/>
+                            Audio by B&O PLAY<br/>
+                        </h5>
+                        <h4>$995</h4>
+                    </div>
+                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="pro">
+                    <img src="lap3.png" alt="">
+                    <div class="description">
+                        <span>Hp Pavillion 14</span>
+                        <h5>Windows 11 Home<br/>
+                            Intel core i5 and i7 Processors<br/>
+                            14-inch Display<br/>
+                            Audio by B&O PLAY<br/>
+                        </h5>
+                        <h4>$2007</h4>
+                    </div>
+                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                </div>
+            
+            </div>
+        </section>
+
+        <section id="banner" class="section-m1">
+            <h4>Customize and Repair Services</h4>
+            <h2>Book an Appointment</h2>
+            <button class="normal">Book now</button>        
+        </section>
+
+        <section id="product1" class="section-p1" >
+            <h2>Products</h2>
+            <p style="color: black;">Accessories</p>
+            <div class="pro-container">
+                <div class="pro">
+                    <img src="gm6.png" alt="">
+                    <div class="description">
+                        <span>Asus TUF Gaming M3</span>
+                        <h5>Gaming mouse</h5>
+                        <h4>$295</h4>
+                    </div>
+                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                </div>
+            
+            
+                <div class="pro">
+                    <img src="gm1.png" alt="">
+                    <div class="description">
+                        <span>RAIDER Pro gaming mouse</span>
+                        <h5>Gaming mouse</h5>
+                        <h4>$96</h4>
+                    </div>
+                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                </div>
+            
+           
+                <div class="pro">
+                    <img src="gm2.png" alt="">
+                    <div class="description">
+                        <span>RAIDER HS1 gaming</span>
+                        <h5>Gaming Headset</h5>
+                        <h4>$149</h4>
+                    </div>
+                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                </div>
+            
+            
+                <div class="pro">
+                    <img src="gm7.jpg" alt="">
+                    <div class="description">
+                        <span>ABS Laptop Stand</span>
+                        <h5>Foldable Adjustable<br/>
+                        Non-slip Stand holder</h5>
+                        <h4>$5</h4>
+                    </div>
+                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                </div>
+            
+            
+                <div class="pro">
+                    <img src="gm8.jpg" alt="">
+                    <div class="description">
+                        <span>Multi funictional Backpack</span>
+                        <h5>3 in 1 Multi funictional<br/>
+                            school business Backpack<br/>
+                            with USB<br/>
+                        </h5>
+                        <h4>$35</h4>
+                    </div>
+                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="pro">
+                    <img src="gm9.jpg" alt="">
+                    <div class="description">
+                        <span>HP Adapter</span>
+                        <h5>Hp replacement Small pin adapter<br/>
+                            19.5V with Fused power cord<br/>
+                        </h5>
+                        <h4>$15</h4>
+                    </div>
+                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="pro">
+                    <img src="gm11.jpg" alt="">
+                    <div class="description">
+                        <span>External Storage Device</span>
+                        <h5>USB2.0 Portable HDD<br/>
+                        </h5>
+                        <h4>$11</h4>
+                    </div>
+                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="pro">
+                    <img src="gm10.jpg" alt="">
+                    <div class="description">
+                        <span>External Storage Device</span>
+                        <h5>16TB portable SDD<br/>
+                        </h5>
+                        <h4>$17</h4>
+                    </div>
+                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                </div>
+            
+            </div>
+        </section>
+        <footer >
+                    <div class="footer-items">
+                      <ul>
+                        <h3>Get to Know Us</h3>
+                        <li><a href="index.html">About us</a></li>
+                      </ul>
+                      <ul>
+                        <h3>Connect with Us</h3>
+                        <li><a href="mailto:claydordcomputers@gmail.com">Gmail</a></li>
+                        <li><a href="https://instagram.com/claydordcomputer?igshid=NTc4MTIwNjQ2YQ==">Instagram</a></li>
+                      </ul>
+                      <ul>
+                        <h3>Just so you know</h3>
+                        <li><strong>Adress:</strong> Accra, Madina- GTBank Premises</li>
+                        <li><strong>Phone:</strong>+233 24 150 5000 | +233 20 833 3208</li>
+                        <li><strong>Working Hours:</strong> 08:00 - 19:00 , Mon - Sat</li>
+                      </ul>
+                    </div>
+                    <div class="copyright">
+                        <p>©2023, Claydord</p>
+                    </div>
+        </footer>
+        
+
+        <script src="script.js"></script>
+    </body>
+</html>
