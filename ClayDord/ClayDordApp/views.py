@@ -16,7 +16,7 @@ def signUpPage(request):
 		return redirect('login')
 	
 	context = {'form': form}
-	return render(request,'signup.html',context)
+	return render(request,'registration/signup.html',context)
 
 def signInPage(request):
     if request.method == 'POST':
@@ -31,7 +31,7 @@ def signInPage(request):
             messages.info(request, 'Wrong Username or Password')
     
     context = {}
-    return render(request, 'signin.html', context)
+    return render(request, 'registration/signin.html', context)
 
 
 def SignOutPage(request):
@@ -40,14 +40,18 @@ def SignOutPage(request):
 
 
 def homePage(request): 
-    return render(request,'index.html')
+    return render(request,'store/store.html')
 
 @login_required(login_url = 'signin')
 def shopPage(request):
     return render(request,'shop.html')
 
 def cartPage(request):
-    return render(request,'cart.html')
+    return render(request,'store/cart.html')
+
+def checkoutPage(request):
+	context = {}
+	return render(request,'store/checkout.html')
 
 
 
