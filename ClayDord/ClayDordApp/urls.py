@@ -4,11 +4,10 @@ from . import views
 
 urlpatterns = [
     path('',views.homePage, name = 'home'),
-    path('shop/',views.shopPage,name = 'shop'),
     path('signin/',views.signInPage,name = 'signin'),
     path('signup/',views.signUpPage,name = 'signup'),
-    path('cart/',views.cartPage,name = 'cart'),
-    path('checkout',views.checkoutPage,name = 'checkout'),
+    path('cart/',views.cart,name = 'cart'),
+    path('checkout/',views.checkoutPage,name = 'checkout'),
 
     #Forget Password paths
     path('reset_password',auth_views.PasswordResetView.as_view(template_name = 'password_reset.html'), name = 'reset_password'),
