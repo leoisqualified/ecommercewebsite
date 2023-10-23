@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect
+from django.http import JsonResponse
 from .forms import CreateForm
 from django.contrib.auth import authenticate,login,logout
 from django.contrib import messages
@@ -71,6 +72,9 @@ def checkoutPage(request):
 		
 	context	= {'items':items, 'order':order} 
 	return render(request,'store/checkout.html')
+
+def updateItem(request):
+	return JsonResponse('item was added', safe=False) 
 
 
 

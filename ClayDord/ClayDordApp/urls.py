@@ -8,6 +8,7 @@ urlpatterns = [
     path('signup/',views.signUpPage,name = 'signup'),
     path('cart/',views.cart,name = 'cart'),
     path('checkout/',views.checkoutPage,name = 'checkout'),
+    path('update_item/',views.updateItem,name = 'update_item'),
 
     #Forget Password paths
     path('reset_password',auth_views.PasswordResetView.as_view(template_name = 'password_reset.html'), name = 'reset_password'),
